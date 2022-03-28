@@ -11,6 +11,8 @@ runs:
       shell: bash
     - run: ls -lAR /home/runner/work/_actions/testacc-art/srcomp-validate-action
       shell: bash
+    - run: echo $GITHUB_WORKSPACE
+      shell: bash
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
