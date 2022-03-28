@@ -9,6 +9,8 @@ runs:
       shell: bash
     - run: ls
       shell: bash
+    - run: ls -lA /home/runner/work/_actions/testacc-art/srcomp-validate-action
+      shell: bash
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
