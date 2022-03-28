@@ -3,6 +3,9 @@ description: A GitHub Action to validate a compstate.
 runs:
   using: composite
   steps:
+    - run: echo $(pwd)
+    - run: echo ${{ github.action_path }}/requirements.txt
+    - run: ls
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
