@@ -4,8 +4,11 @@ runs:
   using: composite
   steps:
     - run: echo $(pwd)
+      shell: bash
     - run: echo ${{ github.action_path }}/requirements.txt
+      shell: bash
     - run: ls
+      shell: bash
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
